@@ -16,7 +16,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <BrowserRouter>
         <nav className="navbar navbar-dark bg-primary mb-3">
           <div className="container">
             <a className="navbar-brand" href="/">WikiCountries</a>
@@ -29,14 +29,12 @@ class App extends Component {
                 {this.generateCountryList()}
               </div>
             </div>
-            <BrowserRouter>
               <Switch>
                 <Route path="/:country" component={CountryDetail} />
               </Switch>
-            </BrowserRouter>
           </div>
         </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }
