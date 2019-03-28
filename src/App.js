@@ -29,9 +29,9 @@ class App extends Component {
                 {this.generateCountryList()}
               </div>
             </div>
-              <Switch>
-                <Route path="/:country" component={CountryDetail} />
-              </Switch>
+            <Switch>
+              <Route path="/:country" component={CountryDetail} />
+            </Switch>
           </div>
         </div>
       </BrowserRouter>
